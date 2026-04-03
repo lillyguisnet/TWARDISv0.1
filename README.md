@@ -21,30 +21,29 @@ The following setup was used for development and testing. The pipelines can also
 
 - **OS:** Ubuntu 22.04
 - **GPU:** NVIDIA RTX 3090
-- **CPU:** 48 cores (used for parallelized frame extraction)
+- **CPU:** 48 cores (used mainly for parallelized frame extraction)
 - **Models:** SAM2 (~0.5 GB), worm classifier (~2.5 GB)
 
 ---
 
 ## Required Packages
 
-Under Python **3.12.3**, latest stable versions recommended:
-- h5py
-- matplotlib
-- networkx
-- numpy
-- opencv-python
-- pandas
-- Pillow
-- PyTorch
-- scikit-image
-- scikit-learn
-- scipy
-- seaborn
-- tifffile
-- torchvision
-- tqdm
-- hydra-core (for SAM)
+Under Python **3.12.3**, scripts were tested with the following versions:
+- h5py 3.14.0
+- matplotlib 3.10.3
+- networkx 3.4.2
+- numpy 1.26.4
+- opencv-python 4.10.0.84
+- pandas 2.3.1
+- Pillow 9.4.0
+- PyTorch 2.3.1
+- scikit-image 0.25.0
+- scikit-learn 1.8.0
+- scipy 1.14.1
+- seaborn 0.13.2
+- tifffile 2024.9.20
+- torchvision 0.18.1
+- tqdm 4.66.1
 
 ---
 
