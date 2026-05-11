@@ -124,6 +124,10 @@ Per-image pickle file containing a list of dictionaries (one per detected worm):
 
 Additionally, a CSV file logs all images where no worms were detected.
 
+### `0_cutout_classifier.py` - Classifier original fine-tuning
+
+A fine-tuned classifier is used to select worm segments after SAM has generated cutouts of the entire image. This classifier can be further fine-tuned if necessary, or replaced with a low-cost language-vision model.
+
 ### `1_convert_images.py` — Convert 16-bit TIFF to 8-bit JPEG
 
 Converts 16-bit TIFF microscopy images to 8-bit JPEG with global min/max contrast normalization. Preserves directory structure. If you have other file types, these will need to be converted to .jpeg for input in the second part.
